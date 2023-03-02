@@ -1,21 +1,54 @@
 import sys 
 
+# Se incluye la biblioteca para graficar matplotlib
+
+import matplotlib.pyplot as plt
+
 def main():
 
     # Programa para identificar EL cuadrante en el que se encuentran 
     # Las coordenadas, proporcionadas.
 
-    control = 0
+    
+    # Se realiza la ejecución el programa hasta que el usuario decida terminar
 
-    while control == 0 :
-        x = int (input ('Ingresa el valor de x: '))
-        y = int (input ('Ingresa el valor de y: '))
+    control = False
+
+    while control == False :
+
+        # Se valida que se proporcione un número entero para x
+
+        while True:
+            ent_x = input('Ingresa el valor de x: ') 
+
+            if ent_x.isalpha() :
+                print("Dato incorrecto. Debes introducir un número para x")
+            else :
+                x = int(ent_x)
+                break
+
+        # Se valida que se proporcione un número entero para y
+
+        while True:
+            ent_y = input('Ingresa el valor de y: ') 
+
+            print("ent_y ", type(ent_y))
+            print("ent_y ALFA ", ent_y.isalpha())
+
+            if ent_y.isalpha() :
+                print("Dato incorrecto. Debes introducir un número para y")
+            else :
+                y = int(ent_y)
+                break
+
+        # Se imprime el cuadrante al que corresponden las coordenadas    
+
         if x==0 and y==0:
             print ('Origen')
         if x==0:
-            print ('Eje Y, ', y)
+            print ('Abcsisa 0 - Eje Y, ', y)
         if y==0:
-            print ('Eje X, ', x)
+            print ('Ordenada 0 - Eje X, ', x)
         if x>0 and y>0:
             print ('Cuadrante I')
         if x<0 and y>0:
@@ -26,26 +59,30 @@ def main():
             print ('Cuadrante VI')
         print ()
 
-# Opcional
+        input("Oprima cualquier tecla para ver la gráfica. ")
+
+        plt.plot(x,y,marker ="o")
+        plt.show()
+
+    # Opcional
 
         continuar = " "
 
         while continuar == " " :
-            continuar = input("¿Deseas ubicar otras coordenadas (S/N)?")
+            continuar = input("¿Deseas evaluar otras coordenadas (S/N)?")
             continuar_up = continuar.upper()
 
             if continuar_up == "S" :
-                control = 0
                 continuar = "S"
             elif continuar_up == "N" :
-                control = 1
+                control = True
                 continuar = "N"
                 break            
             else :
                 print("Debe responder S para si y N para no")
                 continuar = " "
 
-# Fin opcional
+    # Fin opcional
 
     print("Fin del programa. ")
 

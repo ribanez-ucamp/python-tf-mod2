@@ -35,8 +35,6 @@ def main():
             continuar = input("¿Deseas evaluar otra palabra (S/N)?")
             continuar_up = continuar.upper()
 
-            #print("continuar_up ", continuar_up)
-
             if continuar_up == "S" :
                 control = 0
                 continuar = "S"
