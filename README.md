@@ -13,4 +13,5 @@ La palabra correcta debe tener entre cuatro y ocho letras. tomamos en cuenta las
 Parte 2. PROGRAMA QUE DETERMINA A QUE CUADRANTE CORRESPONDEN UN PAR DE COORDENADAS
 
 Crear un programa que en base a 2 números de entrada (coordenadas), identifica en cuál de los 4 cuadrantes se encuentra el punto. El programa permite coordenadas 0, indicando información al respecto. 
+También muestra una gráfica con las coordenadas proporcionadas.
 
