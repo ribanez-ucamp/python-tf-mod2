@@ -1,5 +1,5 @@
 # python-tf-mod2
-# Decidimos hacer dos programas independientes para cubrir los objetivos
+# Decidí hacer dos programas independientes para cubrir los objetivos
 En ambos programas, damos al usuario la opción de cuando terminar la ejecución. Para ello, se le pregunta si desea continuar y se esperan las respuestas S para si o N para N. En ambos casos la respuesta se convierte a mayúscula para solo cubrir dos condiciones. Si la respuesta es diferente a S y a N, se le pide al usuario que responda de manera específica con N o S.
 
 Parte 1. PROGRAMA PARA MEDIR Y VALIDAR LA LONGITUD DE UNA PALABRA
