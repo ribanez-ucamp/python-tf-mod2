@@ -12,6 +12,18 @@ def main():
     
     # Se realiza la ejecución el programa hasta que el usuario decida terminar
 
+    # Se define una función para validar que las entradas sean numéricas
+
+    print("Bienvenidos al programa para graficar un punto!")
+    print("\n")
+
+    def isNumeric(s):
+        try:
+            int(s)
+            return True
+        except ValueError:
+            return False
+
     control = False
 
     while control == False :
@@ -24,22 +36,29 @@ def main():
             if ent_x.isalpha() :
                 print("Dato incorrecto. Debes introducir un número para x")
             else :
-                x = int(ent_x)
-                break
+                s = ent_x
+                #print(isNumeric(s))    # True
+                if isNumeric(s) :
+                    x = int(ent_x)
+                    break
+                else :
+                    print("Dato incorrecto. Debes introducir un número para x")
 
         # Se valida que se proporcione un número entero para y
 
         while True:
             ent_y = input('Ingresa el valor de y: ') 
 
-            print("ent_y ", type(ent_y))
-            print("ent_y ALFA ", ent_y.isalpha())
-
             if ent_y.isalpha() :
                 print("Dato incorrecto. Debes introducir un número para y")
             else :
-                y = int(ent_y)
-                break
+                s = ent_y
+                #print(isNumeric(s))    # True
+                if isNumeric(s) :
+                    y = int(ent_y)
+                    break
+                else :
+                    print("Dato incorrecto. Debes introducir un número para x")
 
         # Se imprime el cuadrante al que corresponden las coordenadas    
 

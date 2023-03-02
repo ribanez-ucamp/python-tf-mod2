@@ -14,4 +14,4 @@ Parte 2. PROGRAMA QUE DETERMINA A QUE CUADRANTE CORRESPONDEN UN PAR DE COORDENAD
 
 Crear un programa que en base a 2 números de entrada (coordenadas), identifica en cuál de los 4 cuadrantes se encuentra el punto. El programa permite coordenadas 0, indicando información al respecto. 
 También muestra una gráfica con las coordenadas proporcionadas.
-
+Se integra una función para validar que los datos de x y y, proporcionados son correctos y numéricos.
