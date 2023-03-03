@@ -75,7 +75,7 @@ def main():
         if x<0 and y<0:
             print ('Cuadrante III')
         if x>0 and y<0:
-            print ('Cuadrante VI')
+            print ('Cuadrante IV')
         print ()
 
         input("Oprima cualquier tecla para ver la gráfica. ")
