@@ -25,7 +25,7 @@ def main():
 
     control = False
 
-    while control == False:
+    while control is False:
         # Se valida que se proporcione un número entero para x
 
         while True:
